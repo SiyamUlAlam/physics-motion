@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দ্বিতীয় অধ্যায়: গতি - আধুনিক শিক্ষা প্ল্যাটফর্ম</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ============= নেভিগেশন বার ============= -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-atom"></i> গতি-শিক্ষা
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">হোম</a></li>
+                <li><a href="#objectives" class="nav-link">শিক্ষার লক্ষ্য</a></li>
+                <li><a href="#topics" class="nav-link">বিষয়বস্তু</a></li>
+                <li><a href="#formulas" class="nav-link">সূত্রাবলী</a></li>
+                <li><a href="#quiz" class="nav-link">কুইজ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============= হিরো সেকশন ============= -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">দ্বিতীয় অধ্যায়: গতি</h1>
+            <p class="hero-subtitle">Motion - আধুনিক পদার্থবিজ্ঞানের মূল ভিত্তি</p>
+            <p class="hero-description">
+                গতি আমাদের চারপাশে সর্বত্র বিদ্যমান। একটি গাড়ির গতি থেকে শুরু করে গ্রহের গতি পর্যন্ত, 
+                এই অধ্যায়ে আমরা শিখব কীভাবে গতিকে পরিমাপ এবং বিশ্লেষণ করা যায়।
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="smoothScroll('objectives')">শুরু করুন</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="animated-sphere"></div>
+            <div class="animated-wave"></div>
+        </div>
+    </section>
+
+    <!-- ============= শিক্ষার লক্ষ্য সেকশন ============= -->
+    <section id="objectives" class="objectives">
+        <h2 class="section-title">এই অধ্যায়ে আপনি যা শেখবেন</h2>
+        <div class="objectives-grid">
+            <div class="objective-card">
+                <i class="fas fa-bookmark"></i>
+                <h3>স্থিতি এবং গতির ধারণা</h3>
+                <p>অবস্থান এবং গতিশীল অবস্থার পার্থক্য বুঝুন</p>
+            </div>
+            <div class="objective-card">
+                <i class="fas fa-route"></i>
+                <h3>বিভিন্ন প্রকার গতি</h3>
+                <p>সরলরেখীয়, বৃত্তাকার এবং পর্যায়ক্রমিক গতি চিনুন</p>
+            </div>
+            <div class="objective-card">
+                <i class="fas fa-arrows"></i>
+                <h3>দূরত্ব ও সরণ</h3>
+                <p>স্কেলার এবং ভেক্টর রাশির পার্থক্য জানুন</p>
+            </div>
+            <div class="objective-card">
+                <i class="fas fa-speedometer-alt"></i>
+                <h3>দ্রুতি এবং বেগ</h3>
+                <p>গতির বিভিন্ন পরিমাপ পদ্ধতি শিখুন</p>
+            </div>
+            <div class="objective-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>ত্বরণ এবং গতির সমীকরণ</h3>
+                <p>গতির গাণিতিক সম্পর্ক আয়ত্ত করুন</p>
+            </div>
+            <div class="objective-card">
+                <i class="fas fa-apple-alt"></i>
+                <h3>পতনশীল বস্তুর সূত্র</h3>
+                <p>মুক্তপতন এবং অভিকর্ষণ বলের প্রভাব বুঝুন</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= বিষয়বস্তু কার্ড সেকশন ============= -->
+    <section id="topics" class="topics">
+        <h2 class="section-title">প্রধান বিষয়বস্তু</h2>
+        <div class="topics-grid">
+            <!-- ১. স্থিতি ও গতি -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-pause-circle"></i>
+                </div>
+                <h3>স্থিতি ও গতি</h3>
+                <p>
+                    স্থিতি হল কোনো বস্তুর অবস্থান পরিবর্তন না হওয়ার অবস্থা, যখন গতি হল অবস্থান ক্রমাগত পরিবর্তিত হওয়ার অবস্থা।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> একটি পার্কিং করা গাড়ি স্থিতিশীল, কিন্তু রাস্তায় চলমান গাড়ি গতিশীল।
+                </div>
+                <button class="btn-learn" onclick="showDetail('rest_motion')">আরও জানো</button>
+            </div>
+
+            <!-- ২. বিভিন্ন প্রকার গতি -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <h3>বিভিন্ন প্রকার গতি</h3>
+                <p>
+                    গতি তিন ধরনের হতে পারে: সরলরেখীয় (সরল রেখায়), বৃত্তাকার (বৃত্তের পথে), এবং পর্যায়ক্রমিক (পুনরাবৃত্তিমূলক)।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> গাড়ি, চাকা, দোলনা
+                </div>
+                <button class="btn-learn" onclick="showDetail('types_motion')">আরও জানো</button>
+            </div>
+
+            <!-- ৩. স্কেলার ও ভেক্টর রাশি -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <h3>স্কেলার ও ভেক্টর রাশি</h3>
+                <p>
+                    স্কেলার রাশি মাত্র মান নিয়ে কাজ করে (যেমন দূরত্ব), যখন ভেক্টর রাশি মান এবং দিক উভয়ই প্রয়োজন (যেমন সরণ)।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> দ্রুতি (স্কেলার), বেগ (ভেক্টর)
+                </div>
+                <button class="btn-learn" onclick="showDetail('scalar_vector')">আরও জানো</button>
+            </div>
+
+            <!-- ৪. দূরত্ব ও সরণ -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-map"></i>
+                </div>
+                <h3>দূরত্ব ও সরণ</h3>
+                <p>
+                    দূরত্ব হল আসল পথের দৈর্ঘ্য, যখন সরণ হল সরাসরি পথের দৈর্ঘ্য। সরণ সর্বদা দূরত্বের চেয়ে কম বা সমান।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> একটি ঘরকে ঘিরে হেঁটে ফিরে আসলে দূরত্ব ≠ সরণ
+                </div>
+                <button class="btn-learn" onclick="showDetail('distance_displacement')">আরও জানো</button>
+            </div>
+
+            <!-- ৫. দ্রুতি ও বেগ -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3>দ্রুতি ও বেগ</h3>
+                <p>
+                    দ্রুতি হল দূরত্বের পরিবর্তনের হার, যখন বেগ হল সরণের পরিবর্তনের হার। বেগ একটি ভেক্টর রাশি।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> "60 km/h" দ্রুতি, "60 km/h উত্তরে" বেগ
+                </div>
+                <button class="btn-learn" onclick="showDetail('speed_velocity')">আরও জানো</button>
+            </div>
+
+            <!-- ৬. ত্বরণ -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <h3>ত্বরণ</h3>
+                <p>
+                    ত্বরণ হল বেগের পরিবর্তনের হার। এটি ধনাত্মক, ঋণাত্মক (মন্দন), বা শূন্য হতে পারে।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> গাড়ি ত্বরান্বিত হওয়া, ব্রেক প্রয়োগ করা
+                </div>
+                <button class="btn-learn" onclick="showDetail('acceleration')">আরও জানো</button>
+            </div>
+
+            <!-- ৭. গতির সমীকরণ -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-superscript"></i>
+                </div>
+                <h3>গতির সমীকরণ</h3>
+                <p>
+                    এই সমীকরণগুলি একটি বস্তুর গতি বিশ্লেষণের জন্য ব্যবহৃত হয়। তিনটি মূল সমীকরণ রয়েছে।
+                </p>
+                <div class="card-example">
+                    <strong>সমীকরণ:</strong> v = u + at, s = ut + ½at²
+                </div>
+                <button class="btn-learn" onclick="showDetail('equations_motion')">আরও জানো</button>
+            </div>
+
+            <!-- ৮. পতনশীল বস্তুর সূত্র -->
+            <div class="topic-card">
+                <div class="card-icon">
+                    <i class="fas fa-cloud-rain"></i>
+                </div>
+                <h3>পতনশীল বস্তুর সূত্র</h3>
+                <p>
+                    পৃথিবীর অভিকর্ষণ বল সমস্ত বস্তুকে একই হারে ত্বরান্বিত করে। এই হারকে g বলা হয় (≈ 10 m/s²)।
+                </p>
+                <div class="card-example">
+                    <strong>উদাহরণ:</strong> একটি ফল ছেড়ে দিলে পড়ে যায় ধ্রুব ত্বরণ সহ
+                </div>
+                <button class="btn-learn" onclick="showDetail('falling_object')">আরও জানো</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= ইন্টারেক্টিভ সিমুলেশন সেকশন ============= -->
+    <section id="simulations" class="simulations">
+        <h2 class="section-title">ইন্টারেক্টিভ সিমুলেশন</h2>
+        <div class="demo-controls" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="teacherStartAnimation()" style="background: linear-gradient(135deg, #0091CC, #0078B8);">▶ সমস্ত সিমুলেশন শুরু করুন</button>
+            <button class="btn btn-secondary" onclick="resetAllSimulations()" style="background: linear-gradient(135deg, #FB8500, #E67300);">⟲ সব রিসেট করুন</button>
+        </div>
+        <div class="simulation-container">
+            <!-- সরলরেখীয় গতি সিমুলেশন -->
+            <div class="simulation-box">
+                <h3>সরলরেখীয় গতি</h3>
+                <div class="simulation-display">
+                    <svg id="linear-motion" width="100%" height="150" viewBox="0 0 400 150">
+                        <rect x="0" y="60" width="400" height="2" fill="#333" stroke-dasharray="5,5"/>
+                        <circle id="moving-ball" cx="50" cy="60" r="8" fill="#FF6B6B"/>
+                        <text x="200" y="100" text-anchor="middle" font-size="12" id="linear-info">অবস্থান: 0 m</text>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <label>দ্রুতি (m/s): <input type="range" id="linear-speed" min="0" max="10" value="5"></label>
+                    <button class="btn btn-sm" onclick="startLinearMotion()">চালু করো</button>
+                    <button class="btn btn-sm" onclick="resetLinearMotion()">পুনরায় সেট করো</button>
+                </div>
+            </div>
+
+            <!-- বৃত্তাকার গতি সিমুলেশন -->
+            <div class="simulation-box">
+                <h3>বৃত্তাকার গতি</h3>
+                <div class="simulation-display">
+                    <svg id="circular-motion" width="100%" height="150" viewBox="0 0 200 180">
+                        <circle cx="100" cy="90" r="50" fill="none" stroke="#4ECDC4" stroke-width="2" stroke-dasharray="5,5"/>
+                        <circle id="rotating-ball" cx="150" cy="90" r="6" fill="#45B7D1"/>
+                        <circle cx="100" cy="90" r="2" fill="#333"/>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <label>গতিবেগ: <input type="range" id="circular-speed" min="1" max="50" value="25"></label>
+                    <button class="btn btn-sm" onclick="startCircularMotion()">চালু করো</button>
+                    <button class="btn btn-sm" onclick="resetCircularMotion()">পুনরায় সেট করো</button>
+                </div>
+            </div>
+
+            <!-- পতনশীল বস্তু সিমুলেশন -->
+            <div class="simulation-box">
+                <h3>পতনশীল বস্তু</h3>
+                <div class="simulation-display">
+                    <svg id="falling-object" width="100%" height="150" viewBox="0 0 200 200">
+                        <rect x="0" y="0" width="200" height="20" fill="#8B4513"/>
+                        <circle id="falling-circle" cx="100" cy="30" r="8" fill="#FF6B6B"/>
+                        <line x1="50" y1="200" x2="150" y2="200" stroke="#333" stroke-width="3"/>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <p>g = 10 m/s²</p>
+                    <button class="btn btn-sm" onclick="startFallingObject()">ছেড়ে দিন</button>
+                    <button class="btn btn-sm" onclick="resetFallingObject()">পুনরায় সেট করো</button>
+                    <span id="falling-info">সময়: 0 sec</span>
+                </div>
+            </div>
+
+            <!-- দূরত্ব বনাম সরণ -->
+            <div class="simulation-box">
+                <h3>দূরত্ব বনাম সরণ পথ</h3>
+                <div class="simulation-display">
+                    <svg id="distance-displacement" width="100%" height="150" viewBox="0 0 300 150">
+                        <!-- ঘর -->
+                        <rect x="50" y="30" width="80" height="80" fill="none" stroke="#666" stroke-width="2"/>
+                        <!-- সরণ (সরল রেখা) -->
+                        <line id="displacement-line" x1="90" y1="70" x2="150" y2="30" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="5,5"/>
+                        <!-- দূরত্ব (পথ) -->
+                        <path id="distance-path" d="M 90 70 L 50 70 L 50 30 L 150 30" stroke="#4ECDC4" stroke-width="2" fill="none"/>
+                        <!-- স্টার্ট পয়েন্ট -->
+                        <circle cx="90" cy="70" r="5" fill="#FFD93D"/>
+                        <!-- এন্ড পয়েন্ট -->
+                        <circle cx="150" cy="30" r="5" fill="#6BCB77"/>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <p class="info-text">নীল: দূরত্ব (আসল পথ)</p>
+                    <p class="info-text">লাল: সরণ (সরাসরি পথ)</p>
+                </div>
+            </div>
+
+            <!-- ত্বরণ সিমুলেশন -->
+            <div class="simulation-box">
+                <h3>ত্বরণ সহ গতি</h3>
+                <div class="simulation-display">
+                    <svg id="acceleration-motion" width="100%" height="150" viewBox="0 0 400 150">
+                        <rect x="0" y="70" width="400" height="2" fill="#333" stroke-dasharray="5,5"/>
+                        <rect id="accel-box" x="30" y="60" width="15" height="15" fill="#FB8500" rx="2"/>
+                        <text x="200" y="110" text-anchor="middle" font-size="11" id="accel-info">সময়: 0s | দূরত্ব: 0m | বেগ: 0m/s | ত্বরণ: 0m/s²</text>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <label>ত্বরণ (m/s²): <input type="range" id="accel-value" min="1" max="10" value="2"></label>
+                    <button class="btn btn-sm" onclick="startAccelerationMotion()">চালু করো</button>
+                    <button class="btn btn-sm" onclick="resetAccelerationMotion()">পুনরায় সেট করো</button>
+                </div>
+            </div>
+
+            <!-- উর্ধ্বমুখী ফেনা সিমুলেশন -->
+            <div class="simulation-box">
+                <h3>উর্ধ্বমুখী ফেনা</h3>
+                <div class="simulation-display">
+                    <svg id="vertical-throw" width="100%" height="150" viewBox="0 0 400 150">
+                        <rect x="0" y="140" width="400" height="2" fill="#333"/>
+                        <circle id="vertical-ball" cx="200" cy="140" r="6" fill="#0091CC"/>
+                        <text x="200" y="120" text-anchor="middle" font-size="11" id="vertical-info">সময়: 0s | উচ্চতা: 0m | বেগ: 0m/s</text>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <p class="info-text">প্রাথমিক বেগ: 25 m/s</p>
+                    <button class="btn btn-sm" onclick="startVerticalThrow()">চালু করো</button>
+                    <button class="btn btn-sm" onclick="resetVerticalThrow()">পুনরায় সেট করো</button>
+                </div>
+            </div>
+
+            <!-- ধ্রুব গতি সিমুলেশন -->
+            <div class="simulation-box">
+                <h3>ধ্রুব বেগের গতি</h3>
+                <div class="simulation-display">
+                    <svg id="constant-speed" width="100%" height="150" viewBox="0 0 400 150">
+                        <rect x="0" y="70" width="400" height="2" fill="#333" stroke-dasharray="5,5"/>
+                        <circle id="const-ball" cx="30" cy="70" r="7" fill="#E63946"/>
+                        <text x="200" y="110" text-anchor="middle" font-size="11" id="const-info">সময়: 0s | দূরত্ব: 0m | বেগ: 0m/s</text>
+                    </svg>
+                </div>
+                <div class="simulation-controls">
+                    <label>বেগ (m/s): <input type="range" id="const-speed" min="1" max="10" value="3"></label>
+                    <button class="btn btn-sm" onclick="startConstantSpeed()">চালু করো</button>
+                    <button class="btn btn-sm" onclick="resetConstantSpeed()">পুনরায় সেট করো</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= সূত্র সেকশন ============= -->
+    <section id="formulas" class="formulas">
+        <h2 class="section-title">গুরুত্বপূর্ণ সূত্রাবলী</h2>
+        <div class="formulas-grid">
+            <!-- সূত্র ১: v = s/t -->
+            <div class="formula-card">
+                <div class="formula-box">
+                    v = s/t
+                </div>
+                <h4>দ্রুতি</h4>
+                <p><strong>যেখানে:</strong></p>
+                <ul class="formula-list">
+                    <li>v = দ্রুতি (m/s)</li>
+                    <li>s = দূরত্ব (m)</li>
+                    <li>t = সময় (s)</li>
+                </ul>
+                <p class="formula-desc">বস্তুর দ্রুতি হল একক সময়ে অতিক্রম করা দূরত্ব।</p>
+            </div>
+
+            <!-- সূত্র ২: a = (v-u)/t -->
+            <div class="formula-card">
+                <div class="formula-box">
+                    a = (v - u)/t
+                </div>
+                <h4>ত্বরণ</h4>
+                <p><strong>যেখানে:</strong></p>
+                <ul class="formula-list">
+                    <li>a = ত্বরণ (m/s²)</li>
+                    <li>v = চূড়ান্ত বেগ (m/s)</li>
+                    <li>u = প্রাথমিক বেগ (m/s)</li>
+                    <li>t = সময় (s)</li>
+                </ul>
+                <p class="formula-desc">বেগের পরিবর্তনের হারকে ত্বরণ বলে।</p>
+            </div>
+
+            <!-- সূত্র ৩: v = u + at -->
+            <div class="formula-card">
+                <div class="formula-box">
+                    v = u + at
+                </div>
+                <h4>গতির প্রথম সমীকরণ</h4>
+                <p><strong>শর্ত:</strong> ধ্রুব ত্বরণ সহ</p>
+                <p class="formula-desc">
+                    এই সমীকরণ যেকোনো সময়ে চূড়ান্ত বেগ বের করতে সাহায্য করে।
+                </p>
+                <div class="formula-example">
+                    <strong>উদাহরণ:</strong> u=0, a=2 m/s², t=5s → v=10 m/s
+                </div>
+            </div>
+
+            <!-- সূত্র ৪: s = ut + 1/2 at² -->
+            <div class="formula-card">
+                <div class="formula-box">
+                    s = ut + ½at²
+                </div>
+                <h4>গতির দ্বিতীয় সমীকরণ</h4>
+                <p><strong>শর্ত:</strong> ধ্রুব ত্বরণ সহ</p>
+                <p class="formula-desc">
+                    নির্দিষ্ট সময়ে বস্তুর দ্বারা অতিক্রম করা সরণ বের করে।
+                </p>
+                <div class="formula-example">
+                    <strong>উদাহরণ:</strong> u=0, a=2 m/s², t=5s → s=25 m
+                </div>
+            </div>
+
+            <!-- সূত্র ৫: v² = u² + 2as -->
+            <div class="formula-card">
+                <div class="formula-box">
+                    v² = u² + 2as
+                </div>
+                <h4>গতির তৃতীয় সমীকরণ</h4>
+                <p><strong>শর্ত:</strong> ধ্রুব ত্বরণ সহ</p>
+                <p class="formula-desc">
+                    যখন সময় সম্পর্কিত তথ্য নেই তখন এই সমীকরণ ব্যবহার হয়।
+                </p>
+                <div class="formula-example">
+                    <strong>উদাহরণ:</strong> u=0, a=2 m/s², s=25 m → v=10 m/s
+                </div>
+            </div>
+
+            <!-- সূত্র ৬: মুক্তপতন -->
+            <div class="formula-card">
+                <div class="formula-box">
+                    h = ½gt²
+                </div>
+                <h4>মুক্তপতনের সূত্র</h4>
+                <p><strong>যেখানে:</strong></p>
+                <ul class="formula-list">
+                    <li>h = উচ্চতা (m)</li>
+                    <li>g = অভিকর্ষণ ত্বরণ (10 m/s²)</li>
+                    <li>t = সময় (s)</li>
+                </ul>
+                <p class="formula-desc">পৃথিবী থেকে ছেড়ে দেওয়া বস্তুর পতনের উচ্চতা।</p>
+            </div>
+        </div>
+
+        <!-- তুলনা টেবিল সেকশন -->
+        <div class="comparison-section">
+            <h3>গুরুত্বপূর্ণ তুলনা সারণী</h3>
+            
+            <!-- তালিকা ১: দূরত্ব বনাম সরণ -->
+            <div class="table-wrapper">
+                <h4>দূরত্ব বনাম সরণ</h4>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>বৈশিষ্ট্য</th>
+                            <th>দূরত্ব</th>
+                            <th>সরণ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>সংজ্ঞা</td>
+                            <td>আসল পথের দৈর্ঘ্য</td>
+                            <td>প্রাথমিক ও চূড়ান্ত অবস্থানের পার্থক্য</td>
+                        </tr>
+                        <tr>
+                            <td>রাশির ধরন</td>
+                            <td>স্কেলার</td>
+                            <td>ভেক্টর</td>
+                        </tr>
+                        <tr>
+                            <td>সবসময়</td>
+                            <td>ধনাত্মক</td>
+                            <td>ধনাত্মক, ঋণাত্মক বা শূন্য</td>
+                        </tr>
+                        <tr>
+                            <td>মান</td>
+                            <td>সবসময় ≥ সরণ</td>
+                            <td>সবসময় ≤ দূরত্ব</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- তালিকা ২: দ্রুতি বনাম বেগ -->
+            <div class="table-wrapper">
+                <h4>দ্রুতি বনাম বেগ</h4>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>বৈশিষ্ট্য</th>
+                            <th>দ্রুতি</th>
+                            <th>বেগ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>সংজ্ঞা</td>
+                            <td>দূরত্ব পরিবর্তনের হার</td>
+                            <td>সরণ পরিবর্তনের হার</td>
+                        </tr>
+                        <tr>
+                            <td>রাশির ধরন</td>
+                            <td>স্কেলার</td>
+                            <td>ভেক্টর</td>
+                        </tr>
+                        <tr>
+                            <td>একক</td>
+                            <td>m/s</td>
+                            <td>m/s (দিক সহ)</td>
+                        </tr>
+                        <tr>
+                            <td>উদাহরণ</td>
+                            <td>60 km/h</td>
+                            <td>60 km/h উত্তরে</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- তালিকা ৩: স্কেলার বনাম ভেক্টর -->
+            <div class="table-wrapper">
+                <h4>স্কেলার বনাম ভেক্টর রাশি</h4>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>বৈশিষ্ট্য</th>
+                            <th>স্কেলার রাশি</th>
+                            <th>ভেক্টর রাশি</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>সংজ্ঞা</td>
+                            <td>শুধু মান নিয়ে কাজ করে</td>
+                            <td>মান এবং দিক উভয়ই প্রয়োজন</td>
+                        </tr>
+                        <tr>
+                            <td>উপস্থাপনা</td>
+                            <td>শুধু সংখ্যা</td>
+                            <td>সংখ্যা + দিক (তীর দিয়ে)</td>
+                        </tr>
+                        <tr>
+                            <td>উদাহরণ</td>
+                            <td>দ্রুতি, দূরত্ব, সময়, ভর</td>
+                            <td>বেগ, সরণ, বল, ত্বরণ</td>
+                        </tr>
+                        <tr>
+                            <td>যোগের নিয়ম</td>
+                            <td>সাধারণ বীজগণিত</td>
+                            <td>ভেক্টর সংযোজন নিয়ম</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= বাস্তব-জীবনের উদাহরণ সেকশন ============= -->
+    <section id="examples" class="examples">
+        <h2 class="section-title">বাস্তব-জীবনের উদাহরণ</h2>
+        <div class="examples-grid">
+            <!-- উদাহরণ ১: সাইকেল -->
+            <div class="example-card">
+                <div class="example-icon">
+                    <i class="fas fa-bicycle"></i>
+                </div>
+                <h3>সাইকেলের গতি</h3>
+                <p>
+                    যখন একজন ছাত্র সাইকেল চালায়, তার গতি পরিবর্তিত হয়। সমতল রাস্তায় তার গতি বেশি কিন্তু উপরির দিকে আরোহণে মন্থর হয়ে যায়।
+                </p>
+                <div class="example-details">
+                    <strong>গতি বিশ্লেষণ:</strong>
+                    <ul>
+                        <li>সমতল: ≈ 20 km/h</li>
+                        <li>আরোহণ: ≈ 10 km/h</li>
+                        <li>অবতরণ: ≈ 30 km/h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- উদাহরণ ২: গাড়ি -->
+            <div class="example-card">
+                <div class="example-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>গাড়ির ত্বরণ</h3>
+                <p>
+                    একটি গাড়ি স্থিরাবস্থা থেকে শুরু করে ত্বরান্বিত হয়। প্রতি সেকেন্ডে তার বেগ বৃদ্ধি পায়। এটি ধ্রুব ত্বরণের একটি ভাল উদাহরণ।
+                </p>
+                <div class="example-details">
+                    <strong>টাইম-বেগ রেকর্ড:</strong>
+                    <ul>
+                        <li>t=0s: v=0 m/s</li>
+                        <li>t=5s: v=20 m/s</li>
+                        <li>t=10s: v=40 m/s</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- উদাহরণ ৩: দোলনা -->
+            <div class="example-card">
+                <div class="example-icon">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <h3>দোলনার পর্যায়ক্রমিক গতি</h3>
+                <p>
+                    একটি দোলনা পর্যায়ক্রমিক গতির নিখুঁত উদাহরণ। এটি সর্বোচ্চ বিন্দুতে পৌঁছায়, ফিরে আসে, এবং এই প্রক্রিয়া পুনরাবৃত্তি হয়।
+                </p>
+                <div class="example-details">
+                    <strong>গতি বৈশিষ্ট্য:</strong>
+                    <ul>
+                        <li>সর্বোচ্চে গতি = 0</li>
+                        <li>মধ্যবিন্দুতে সর্বোচ্চ গতি</li>
+                        <li>আবর্তনকাল: ধ্রুব</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- উদাহরণ ৪: ক্রিকেট বল -->
+            <div class="example-card">
+                <div class="example-icon">
+                    <i class="fas fa-baseball-ball"></i>
+                </div>
+                <h3>ক্রিকেট বলের প্রজেক্টাইল গতি</h3>
+                <p>
+                    একটি ক্রিকেট বল যখন ছেড়ে দেওয়া হয়, এটি অনুভূমিক দিক এবং উল্লম্ব দিক উভয়ই গতি রাখে। এটি প্রজেক্টাইল গতির উদাহরণ।
+                </p>
+                <div class="example-details">
+                    <strong>গতির বৈশিষ্ট্য:</strong>
+                    <ul>
+                        <li>অনুভূমিক: ধ্রুব গতি</li>
+                        <li>উল্লম্ব: ত্বরিত গতি</li>
+                        <li>বক্রপথ অনুসরণ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- উদাহরণ ৫: পড়ন্ত ফল -->
+            <div class="example-card">
+                <div class="example-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <h3>পড়ন্ত ফল - মুক্তপতন</h3>
+                <p>
+                    একটি গাছ থেকে পড়ন্ত ফল মুক্তপতনের নিখুঁত উদাহরণ। ফলের ত্বরণ সবসময় g = 10 m/s² (প্রায়)।
+                </p>
+                <div class="example-details">
+                    <strong>পতনের হার:</strong>
+                    <ul>
+                        <li>1 সেকেন্ডে: 5 মিটার</li>
+                        <li>2 সেকেন্ডে: 20 মিটার</li>
+                        <li>3 সেকেন্ডে: 45 মিটার</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- উদাহরণ ৬: পৃথিবীর গতি -->
+            <div class="example-card">
+                <div class="example-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>পৃথিবীর বৃত্তাকার গতি</h3>
+                <p>
+                    পৃথিবী সূর্যের চারপাশে বৃত্তাকার পথে ঘোরে। যদিও তার গতির মান ধ্রুব, দিক ক্রমাগত পরিবর্তিত হয়, তাই ত্বরণ আছে।
+                </p>
+                <div class="example-details">
+                    <strong>গতির পরামিতি:</strong>
+                    <ul>
+                        <li>কক্ষপথের ব্যাসার্ধ: 150 লক্ষ km</li>
+                        <li>পরিক্রমণকাল: 365 দিন</li>
+                        <li>গড় গতি: 30 km/s</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= কুইজ সেকশন ============= -->
+    <section id="quiz" class="quiz">
+        <h2 class="section-title">আপনার জ্ঞান পরীক্ষা করুন - কুইজ</h2>
+        <div class="quiz-container">
+            <div id="quiz-content" class="quiz-content">
+                <div class="quiz-header">
+                    <h3 id="quiz-progress"></h3>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+                <div id="quiz-questions" class="quiz-questions"></div>
+                <button id="quiz-submit" class="btn btn-primary" onclick="submitQuiz()" style="display: none;">আপনার উত্তর জমা দিন</button>
+                <div id="quiz-results" class="quiz-results" style="display: none;">
+                    <h3>আপনার ফলাফল</h3>
+                    <div id="score-display"></div>
+                    <button class="btn btn-secondary" onclick="startQuiz()">পুনরায় চেষ্টা করুন</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============= সারসংক্ষেপ সেকশন ============= -->
+    <section id="summary" class="summary">
+        <h2 class="section-title">সারসংক্ষেপ এবং মূল বিষয়বস্তু</h2>
+        <div class="summary-grid">
+            <div class="summary-box">
+                <h3>গতির সংজ্ঞা</h3>
+                <p>
+                    গতি হল বস্তুর অবস্থানের সাথে সময়ের পরিবর্তন। যদি অবস্থান পরিবর্তিত হয় তাহলে বস্তু গতিশীল, অন্যথায় স্থিতিশীল।
+                </p>
+            </div>
+            <div class="summary-box">
+                <h3>দূরত্ব এবং সরণ</h3>
+                <p>
+                    <strong>দূরত্ব:</strong> গমনপথের মোট দৈর্ঘ্য (স্কেলার)।
+                    <strong>সরণ:</strong> প্রাথমিক থেকে চূড়ান্ত অবস্থানের সরাসরি দূরত্ব (ভেক্টর)।
+                </p>
+            </div>
+            <div class="summary-box">
+                <h3>দ্রুতি এবং বেগ</h3>
+                <p>
+                    <strong>দ্রুতি:</strong> একক সময়ে দূরত্বের পরিবর্তন (স্কেলার)।
+                    <strong>বেগ:</strong> একক সময়ে সরণের পরিবর্তন (ভেক্টর)।
+                </p>
+            </div>
+            <div class="summary-box">
+                <h3>ত্বরণ</h3>
+                <p>
+                    ত্বরণ হল বেগের পরিবর্তনের হার। এটি ধনাত্মক (গতি বৃদ্ধি), ঋণাত্মক/মন্দন (গতি হ্রাস), বা শূন্য (ধ্রুব গতি) হতে পারে।
+                </p>
+            </div>
+            <div class="summary-box">
+                <h3>প্রধান সমীকরণ</h3>
+                <p>
+                    গতির তিনটি সমীকরণ: v = u + at, s = ut + ½at², এবং v² = u² + 2as।
+                    এগুলি ধ্রুব ত্বরণ সহ গতি সমস্যা সমাধানে ব্যবহৃত হয়।
+                </p>
+            </div>
+            <div class="summary-box">
+                <h3>মুক্তপতন</h3>
+                <p>
+                    পৃথিবীর অভিকর্ষণ বল সকল বস্তুকে একই হারে ত্বরান্বিত করে (g ≈ 10 m/s²)।
+                    এটি বস্তুর ভর নির্বিশেষে প্রযোজ্য (বাতাসের প্রতিরোধ উপেক্ষা করলে)।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= ফুটার ============= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>দ্বিতীয় অধ্যায়: গতি</h4>
+                <p>ব্যাপক শিক্ষামূলক সম্পদ কেন্দ্র</p>
+            </div>
+            <div class="footer-section">
+                <h4>দ্রুত লিঙ্ক</h4>
+                <ul>
+                    <li><a href="#hero">শীর্ষে ফিরুন</a></li>
+                    <li><a href="#topics">বিষয়বস্তু</a></li>
+                    <li><a href="#formulas">সূত্র</a></li>
+                    <li><a href="#quiz">কুইজ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>শিক্ষা উদ্দেশ্য</h4>
+                <p>
+                    এই ওয়েবসাইটটি Class 9-10 এর শিক্ষার্থীদের জন্য ডিজাইন করা হয়েছে।
+                    এটি পদার্থবিজ্ঞানের মৌলিক ধারণা সহজ এবং আকর্ষণীয়ভাবে উপস্থাপন করে।
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ফিজিক্স ডেমনস - শিক্ষা প্ল্যাটফর্ম। সকল অধিকার সংরক্ষিত।</p>
+            <p>প্রণয়ন: সিয়াম উল আলম, ২০০২০৩২ এডুকেশনাল টেকনোলজি এন্ড ইঞ্জিনিয়ারিং </p>
+        </div>
+    </footer>
+
+    <!-- ============= বিস্তারিত মডাল ============= -->
+    <div id="detail-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetail()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
